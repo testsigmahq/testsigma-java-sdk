@@ -35,5 +35,36 @@ Below is the maven dependency for Testsigma SDK.
 
 You can refer [Testsigma Addons](https://github.com/testsigmahq/testsigma-addons) github repository for sample addons.
 
+## **Creating an Account**
 
+Try Testsigma add-ons by creating an account in our cloud environment. Alternatively, you can also deploy Testsigma on your local machine or private server instance. Follow the links below for more information:
+
+* [Create an account on Testsigma Cloud](https://testsigma.com/signup)
+* [Deploy Testsigma on my machine](https://testsigma.com/docs/getting-started/setup/overview/)
+
+
+## **Contribute**
+
+We love our contributors! If you'd like to contribute anything from a bug-fix in existing addon to creating new add-ons, start here—
+
+* 📖 Read our [Contribution Guide](CONTRIBUTING.md)
+* 🧩 [Set up your local environment](CONTRIBUTING.md#-setup-for-local-development)
+* 👾 Explore some [good first add-ons](https://github.com/testsigmahq/testsigma-addons/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+addon%22)
+* 📕 Read our [Code of Conduct](CODE_OF_CONDUCT.md)
+
+
+## **Help Center**
+
+* 💬 Talk to us on [Discord](https://discord.com/invite/5caWS7R6QX)
+* 📄 Learn how to use: [Documentation](https://testsigma.com/docs)
+* 📄 Find solutions in our [Tutorials](https://testsigma.com/tutorials/)
+* ⚠️ Open an issue/bug right here on [GitHub](https://github.com/testsigmahq/testsigma-addons/issues/new/choose)
+* 🎦 See our guides and tutorials on [YouTube](https://www.youtube.com/testsigma)
+
+Still, having trouble? We want to help! Reach out to us on [Discord](https://discord.com/invite/5caWS7R6QX) to get support and ask questions on our [community forum](https://github.com/testsigmahq/testsigma/discussions).
+
+
+## **License**
+
+The source code in this directory is under [Apache License 2.0](LICENSE).
 
