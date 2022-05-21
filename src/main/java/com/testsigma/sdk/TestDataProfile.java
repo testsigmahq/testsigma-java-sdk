@@ -1,9 +1,8 @@
 package com.testsigma.sdk;
 
 
-import com.google.gson.Gson;
 import lombok.Data;
-import org.json.JSONArray;
+
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -13,9 +12,8 @@ public class TestDataProfile {
 
     private List<TestDataSet> testDataSets;
 
-    public TestDataProfile(JSONArray testDataSets){
-        Gson gson = new Gson();
-        this.testDataSets = gson.fromJson(String.valueOf(testDataSets),List.class);
+    public TestDataProfile(List<TestDataSet> testDataSets) {
+        this.testDataSets = testDataSets;
     }
 
     public Optional<TestDataSet> getSetByName(String name){
