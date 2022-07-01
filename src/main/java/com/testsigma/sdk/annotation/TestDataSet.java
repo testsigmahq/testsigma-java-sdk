@@ -9,7 +9,6 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 public @interface TestDataSet {
     String reference() default "set-name";
-    String profileReference() default "profile-name";
     String description() default "";
     boolean deprecated() default false;
 }
