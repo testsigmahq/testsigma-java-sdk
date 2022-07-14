@@ -10,4 +10,6 @@ public abstract class DriverAction extends Action {
   public WebElement getElement(Element element) {
     return element.getElement();
   }
+  @Setter
+  public RunMetaData runMetaData;
 }
