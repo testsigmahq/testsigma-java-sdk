@@ -1,7 +1,5 @@
 package com.testsigma.sdk;
 
-import com.google.gson.JsonObject;
-import com.testsigma.sdk.annotation.TestDataSet;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
 import org.json.JSONObject;
