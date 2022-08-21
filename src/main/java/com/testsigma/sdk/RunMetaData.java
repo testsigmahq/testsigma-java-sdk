@@ -13,4 +13,5 @@ public class RunMetaData {
     private Long runId;
     private Date startTime;
     private String triggeredByEmail;
+    private Long testDataId;
 }
