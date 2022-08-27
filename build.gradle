@@ -27,7 +27,7 @@ repositories {
 }
 
 group = 'com.testsigma'
-version = '1.0.6'
+version = '1.0.7'
 description = 'Testsigma Java SDK'
 java.sourceCompatibility = JavaVersion.VERSION_11
 
