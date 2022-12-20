@@ -1,5 +1,5 @@
 package com.testsigma.sdk;
 
 public enum Result {
-  SUCCESS,FAILURE,QUEUED
+  SUCCESS,FAILURE,FAILED,QUEUED
 }
