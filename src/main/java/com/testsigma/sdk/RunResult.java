@@ -24,4 +24,6 @@ public class RunResult {
   Long failedCount;
   Long passedCount;
   Long consolidatedDuration;
+  Long reRunParentId;
+  RunResult reRunParentResult;
 }

@@ -19,5 +19,6 @@ public class TestCaseResult {
   Timestamp startTime;
   Timestamp endTime;
   List<IterationResult> iterationResults;
+  Boolean isComponent;
   Long testDataId;
 }
