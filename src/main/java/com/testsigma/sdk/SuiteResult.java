@@ -14,4 +14,9 @@ public class SuiteResult {
   Timestamp startTime;
   Timestamp endTime;
   List<TestCaseResult> caseResults;
+  Long id;
+  Long environmentResultId;
+  Long reRunParentId;
+  Long consolidatedDuration;
+  Boolean runTestCasesInParallel;
 }

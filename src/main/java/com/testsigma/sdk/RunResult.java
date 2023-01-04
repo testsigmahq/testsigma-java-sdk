@@ -14,10 +14,14 @@ import java.util.List;
 public class RunResult {
   TriggeredType triggeredType;
   Result result;
-  Long runResultId;
+  Long id;
   Long executionId;
   String triggeredByEmail;
   Timestamp startTime;
   Timestamp endTime;
   List<TestMachineResult> machineResults;
+  Long totalCount;
+  Long failedCount;
+  Long passedCount;
+  Long consolidatedDuration;
 }

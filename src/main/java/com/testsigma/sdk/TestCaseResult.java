@@ -10,9 +10,14 @@ import java.util.List;
 @RequiredArgsConstructor
 @Data
 public class TestCaseResult {
+  Long id;
+  Long testCaseId;
+  Long executionResultId;
+  Long environmentResultId;
+  Long suiteId;
   Result result;
   Timestamp startTime;
   Timestamp endTime;
   List<IterationResult> iterationResults;
-  Long testDataProfileId;
+  Long testDataId;
 }
