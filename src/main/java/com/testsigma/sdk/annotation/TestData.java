@@ -12,4 +12,5 @@ public @interface TestData {
   String description() default "";
   boolean deprecated() default false;
   String[] allowedValues() default {};
+  boolean isRuntimeVariable() default false;
 }
