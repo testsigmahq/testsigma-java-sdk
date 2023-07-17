@@ -16,4 +16,10 @@ public class TestStepResult {
   TestStepType type;
   TestCaseResult stepGroupResult;
   Long testDataProfileId;
+  String screenshotUrl;
+
+  public TestStepResult setScreenshotUrl(String url){
+    this.screenshotUrl = url;
+    return this;
+  }
 }
