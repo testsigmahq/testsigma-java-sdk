@@ -16,4 +16,5 @@ public @interface Action {
   StepActionType actionType() default StepActionType.NONE;
   String description() default "";
   boolean deprecated() default false;
+  boolean canTakeScreenshot() default true;
 }
