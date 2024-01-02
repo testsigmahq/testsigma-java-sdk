@@ -16,6 +16,10 @@ public interface OCR {
 
     public  FindImageResponse findImage(String imageUrl, Float threshold, Integer scale);
 
+    public FindImageResponse findImage(String imageUrl, Integer occurrence);
+
+    public FindImageResponse findImage(String imageUrl, Integer occurrence, Float threshold);
+
     public void uploadFile(String s3SignedURL, File baseImageFile);
 
 }
