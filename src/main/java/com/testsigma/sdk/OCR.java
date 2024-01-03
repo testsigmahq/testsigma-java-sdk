@@ -2,6 +2,7 @@ package com.testsigma.sdk;
 
 import java.io.File;
 import java.util.List;
+import java.util.Map;
 
 public interface OCR {
     public List<OCRTextPoint> extractTextFromPage();
@@ -21,5 +22,9 @@ public interface OCR {
     public FindImageResponse findImage(String imageUrl, Integer occurrence, Float threshold);
 
     public void uploadFile(String s3SignedURL, File baseImageFile);
+
+    public Map<String,List<OCRTextPoint>> extractTextAndSentenesFromImage(OCRImage image);
+
+    public Map<String,List<OCRTextPoint>> extractTextAndSentenesFromImage();
 
 }
