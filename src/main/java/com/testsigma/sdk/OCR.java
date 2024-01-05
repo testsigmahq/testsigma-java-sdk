@@ -23,8 +23,8 @@ public interface OCR {
 
     public void uploadFile(String s3SignedURL, File baseImageFile);
 
-    public Map<String,List<OCRTextPoint>> extractTextAndSentenesFromImage(OCRImage image);
+    public Map<String,List<OCRTextPoint>> extractTextAndSentencesFromImage(OCRImage image);
 
-    public Map<String,List<OCRTextPoint>> extractTextAndSentenesFromImage();
+    public Map<String,List<OCRTextPoint>> extractTextAndSentencesFromImage();
 
 }
