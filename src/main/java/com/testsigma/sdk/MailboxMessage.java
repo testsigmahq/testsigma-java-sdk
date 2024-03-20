@@ -20,7 +20,7 @@ public class MailboxMessage {
     private String receivedFrom;
     private Map<String, String> attachmentUrls;
     private Timestamp receivedAt;
-    private String receivedEmailMessageId;
+    private String headers;
 
 
 
