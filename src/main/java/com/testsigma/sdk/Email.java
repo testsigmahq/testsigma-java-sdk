@@ -3,7 +3,9 @@ package com.testsigma.sdk;
 import org.apache.http.entity.ContentType;
 
 import java.io.File;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public interface Email {
   void setTo(List<String> to);
@@ -14,6 +16,8 @@ public interface Email {
   void setAttachments(List<File> attachments);
 
   void setContentType(ContentType contentType);
+  void setHeader(Map<String, String> headersList);
 
+  String getMessageId(String headers);
   Boolean send();
 }

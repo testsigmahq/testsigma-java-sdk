@@ -20,6 +20,8 @@ public class MailboxMessage {
     private String receivedFrom;
     private Map<String, String> attachmentUrls;
     private Timestamp receivedAt;
+    private String headers;
+
 
 
     public String getOTP(String regex) throws Exception {
