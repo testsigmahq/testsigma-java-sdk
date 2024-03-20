@@ -16,7 +16,7 @@ public interface Email {
   void setAttachments(List<File> attachments);
 
   void setContentType(ContentType contentType);
-  void addHeader(Map<String, String> headersList);
+  void setHeader(Map<String, String> headersList);
 
   String getMessageId(String headers);
   Boolean send();
