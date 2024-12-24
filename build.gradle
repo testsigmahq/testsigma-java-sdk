@@ -48,7 +48,3 @@ dependencies {
 tasks.named('test') {
     useTestNG()
 }
-
-tasks.withType(Sign).configureEach {
-    onlyIf { false }
-}
