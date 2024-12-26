@@ -7,9 +7,5 @@ import java.lang.annotation.Target;
 
 @Target(ElementType.FIELD)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface RunTimeData {
-  String reference() default "run-time-data";
-  String description() default "";
-  boolean deprecated() default false;
-  String hierarchy() default "current";
+public @interface CICDCredentials {
 }
