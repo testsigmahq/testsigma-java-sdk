@@ -5,6 +5,7 @@
 buildscript {
     repositories {
         mavenCentral()
+        mavenLocal()
     }
     dependencies {
         classpath 'com.vanniktech:gradle-maven-publish-plugin:0.25.3'
@@ -27,7 +28,7 @@ repositories {
 }
 
 group = 'com.testsigma'
-version = '1.2.14_cloud'
+version = '1.2.17_cloud'
 description = 'Testsigma Java SDK'
 java.sourceCompatibility = JavaVersion.VERSION_11
 
