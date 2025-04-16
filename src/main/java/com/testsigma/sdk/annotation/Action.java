@@ -19,6 +19,5 @@ public @interface Action {
   String description() default "";
   boolean deprecated() default false;
   boolean useCustomScreenshot() default false;
-  WindowsTechnologyType windowsTechnology();
-  ObjectType[] supportedObjectTypes();
+  String displayName() default "";
 }
