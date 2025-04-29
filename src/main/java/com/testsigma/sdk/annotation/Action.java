@@ -1,7 +1,9 @@
 package com.testsigma.sdk.annotation;
 
+import com.testsigma.sdk.ObjectType;
 import com.testsigma.sdk.StepActionType;
 import com.testsigma.sdk.ApplicationType;
+import com.testsigma.sdk.WindowsTechnologyType;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -17,4 +19,5 @@ public @interface Action {
   String description() default "";
   boolean deprecated() default false;
   boolean useCustomScreenshot() default false;
+  String displayName() default "";
 }
