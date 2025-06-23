@@ -28,14 +28,14 @@ repositories {
 }
 
 group = 'com.testsigma'
-version = '1.2.22_cloud'
+version = '1.2.23_cloud'
 description = 'Testsigma Java SDK'
 java.sourceCompatibility = JavaVersion.VERSION_11
 
 dependencies {
     implementation 'org.projectlombok:lombok:1.18.20'
-    implementation 'org.seleniumhq.selenium:selenium-api:4.20.0'
-    implementation 'org.seleniumhq.selenium:selenium-java:4.20.0'
+    implementation 'org.seleniumhq.selenium:selenium-api:4.33.0'
+    implementation 'org.seleniumhq.selenium:selenium-java:4.33.0'
     implementation 'io.appium:java-client:9.2.2'
     implementation 'org.apache.commons:commons-lang3:3.12.0'
     implementation 'org.testng:testng:7.4.0'
