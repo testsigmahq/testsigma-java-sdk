@@ -28,7 +28,7 @@ repositories {
 }
 
 group = 'com.testsigma'
-version = '1.2.25_cloud'
+version = '1.2.26_cloud'
 description = 'Testsigma Java SDK'
 java.sourceCompatibility = JavaVersion.VERSION_11
 
@@ -38,7 +38,7 @@ dependencies {
     implementation 'org.seleniumhq.selenium:selenium-java:4.33.0'
     implementation 'io.appium:java-client:9.4.0'
     implementation 'org.apache.commons:commons-lang3:3.18.0'
-    implementation 'org.testng:testng:7.7.0'
+    implementation 'org.testng:testng:7.10.2'
     implementation 'org.json:json:20231013'
     implementation 'com.fasterxml.jackson.core:jackson-annotations:2.13.0'
     annotationProcessor 'org.projectlombok:lombok:1.18.20'
