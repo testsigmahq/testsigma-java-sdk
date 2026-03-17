@@ -17,6 +17,7 @@ plugins {
     id 'maven-publish'
     id 'signing'
     id 'com.vanniktech.maven.publish' version '0.34.0'
+    id 'org.cyclonedx.bom' version '1.10.0'
 }
 
 repositories {

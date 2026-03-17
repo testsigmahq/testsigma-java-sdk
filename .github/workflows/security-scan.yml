@@ -16,19 +16,20 @@ jobs:
           java-version: '11'
           distribution: 'zulu'
 
-      - name: Download dependencies
-        run: ./gradlew dependencies --no-daemon
+      - name: Generate CycloneDX SBOM
+        # Resolves all transitive dependencies and produces build/reports/bom.json
+        run: ./gradlew cyclonedxBom --no-daemon
 
       - name: Install Grype
         run: curl -sSfL https://raw.githubusercontent.com/anchore/grype/main/install.sh | sh -s -- -b /usr/local/bin
 
       - name: Run Grype vulnerability scanner
         run: |
-          GRADLE_CACHE="$HOME/.gradle/caches/modules-2/files-2.1"
-          echo "Scanning Gradle cache: $(find $GRADLE_CACHE -name '*.jar' | wc -l) JARs found"
-          grype "dir:$GRADLE_CACHE" \
+          echo "=== Vulnerability table ==="
+          grype "sbom:build/reports/bom.json" \
             --output table
-          grype "dir:$GRADLE_CACHE" \
+
+          grype "sbom:build/reports/bom.json" \
             --output sarif > grype-results.sarif
 
       - name: Upload scan results as artifact
@@ -36,4 +37,6 @@ jobs:
         if: always()
         with:
           name: grype-scan-results
-          path: 'grype-results.sarif'
+          path: |
+            grype-results.sarif
+            build/reports/bom.json
